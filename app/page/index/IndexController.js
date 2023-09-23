@@ -1,4 +1,4 @@
-MyApp.controller('IndexController', function ($scope, translationService) {
+MyApp.controller('IndexController', function ($scope) {
     $scope.text = 'My name';
 
 });

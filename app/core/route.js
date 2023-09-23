@@ -10,7 +10,7 @@ MyApp.config(function ($stateProvider, $urlRouterProvider, $locationProvider, $c
             url: '/not-found',
             templateUrl: '/app/page/error/notfound/not-found.html',
             controller: 'NotFoundController'
-        })
+        });
 
     $urlRouterProvider.otherwise('/not-found');
 
@@ -18,4 +18,4 @@ MyApp.config(function ($stateProvider, $urlRouterProvider, $locationProvider, $c
 
     $compileProvider.imgSrcSanitizationWhitelist(/^\s*(http|https|file|blob|cdvfile|content):|data:image\//);
 
-})
+});
