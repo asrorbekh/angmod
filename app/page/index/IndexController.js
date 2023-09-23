@@ -1,4 +1,4 @@
 MyApp.controller('IndexController', function ($scope) {
-    $scope.text = 'Indrex';
+    $scope.text = 'My name';
 
 });
