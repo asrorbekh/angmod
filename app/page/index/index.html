@@ -1,3 +1,36 @@
-<h1>{{text}}</h1>
+<div class="container">
+    Template <select ng-model="mode" ng-options="item.display for item in options track by item.value"></select>
 
-<a ng-href="/home">Test</a>
+
+    <div ng-switch on="mode.value" style="margin-top: 20px">
+        <table class="table table-striped" ng-switch-when="table">
+            <thead>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Value
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="item in items track by $index">
+                <td>
+                    {{item.id}}
+                </td>
+                <td>
+                    {{item.title}}
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <ul class="list-group" ng-switch-when="list">
+            <li ng-repeat="item in items track by $index">
+                {{item.title}}
+            </li>
+        </ul>
+    </div>
+
+</div>
