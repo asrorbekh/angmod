@@ -5,4 +5,4 @@ if(domain.includes('.loc')){
     apiUrl = 'http://api.loc';
 }
 
-let MyApp = angular.module('MyApp', ['ui.router', 'ngRoute', 'LocalStorageModule', 'infinite-scroll']);
+let MyApp = angular.module('MyApp', ['ui.router', 'ngRoute', 'LocalStorageModule', 'infinite-scroll','ngResource']);
