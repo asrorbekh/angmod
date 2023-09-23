@@ -7,8 +7,12 @@
 
     <title>AngMod</title>
 
-    <link rel="stylesheet" href="assets/css/vendor/bootstrap/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/vendor/bootstrap/bootstrap-utilities.min.css" type="text/css">
+<!--    Assets-->
+    <link rel="stylesheet" href="./assets/css/vendor/bootstrap/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/vendor/bootstrap/bootstrap-utilities.min.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/core.css" type="text/css">
+
+<!--    Vendors-->
     <script src="./assets/js/vendor/angular/angular.min.js"></script>
     <script src="./assets/js/vendor/angular/route.min.js"></script>
     <script src="./assets/js/vendor/angular/angular-ui-router.min.js"></script>
@@ -19,18 +23,15 @@
     <script src="./app/core/engine.js"></script>
     <script src="./app/core/route.js"></script>
 
-
 <!--    App models-->
-    <script src="./app/models/user.js"></script>
-
+    <script src="./app/model/user.js"></script>
 
     <!--    Page controllers-->
     <script src="./app/page/index/IndexController.js"></script>
     <script src="./app/page/error/notfound/NotfoundController.js"></script>
 
-
 </head>
 <body>
-<div ui-view></div>
+<div ui-view class="container"></div>
 </body>
 </html>
